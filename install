@@ -20,7 +20,7 @@ echo "Download location: $path"
 if [ ! -w "$path" ]; then
     SUDO="sudo"
 else
-    SUDO=""
+    SUDO="doas"
 fi
 
 # Check the system architecture
